@@ -4,12 +4,34 @@ using namespace std;
 void a(int w, int h);
 void s(int w, int h);
 void b(int w , int h);
-
+void c(int h, int w);
 int main()
 {
-    b(10,10);
+    c(10,10);
 
     cout<<endl<<endl<<endl;
+}
+
+void c(int h, int w){
+    for(int i =0 ; i<h ; i++)
+    {
+        for(int j = 0 ; j< w; j++)
+        {
+            if(
+                (i==0)
+                ||(i==h-1)
+                ||(j==0)
+            )
+            {
+                cout<<"*";
+            }
+            else
+            {
+                cout<<" ";
+            }
+        }
+        cout<<endl;
+    }
 }
 
 void b(int w , int h)
@@ -29,7 +51,7 @@ void b(int w , int h)
                 cout << " ";
             }
         }
-        std::cout <<endl;
+        cout <<endl;
     }
 
 
