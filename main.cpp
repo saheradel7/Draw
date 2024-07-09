@@ -5,11 +5,40 @@ void a(int w, int h);
 void s(int w, int h);
 void b(int w , int h);
 void c(int h, int w);
+void d(int h , int w);
+
 int main()
 {
-    c(10,10);
+    d(18,17);
 
     cout<<endl<<endl<<endl;
+}
+
+void d(int h , int w)
+{
+    for(int i = 0 ; i<h/2;i++)
+    {
+        cout<<"*";
+        for(int j =0;j<w;j+=w)
+        {
+            for (int x=0;x<=i;x+=1)
+            {
+                cout<<"  ";
+            }
+            cout<<"*";
+        }
+        cout<<endl;
+    }
+    for(int i=h/2;i>=0;i--)
+    {
+        cout<<"*";
+        for(int x= i ; x>0;x--)
+        {
+            cout<<"  ";
+        }
+        cout<<"*";
+        cout<<endl;
+    }
 }
 
 void c(int h, int w){
