@@ -7,12 +7,34 @@ void b(int w , int h);
 void c(int h, int w);
 void d(int h , int w);
 void e(int w, int h);
-
+void f(int w,int h);
 int main()
 {
-    e(10,10);
+    f(10,10);
 
     cout<<endl<<endl<<endl;
+}
+void f(int w,int h)
+{
+    for(int i =0;i<h;i++)
+    {
+        for(int j=0;j<w;j++)
+        {
+            if(
+                (i==0)
+                ||(i==h/2)
+                ||(j==0)
+            )
+            {
+                cout<<"*";
+            }
+            else{
+                cout<<" ";
+            }
+
+        }
+        cout<<endl;
+    }
 }
 void e(int w, int h)
 {
