@@ -8,12 +8,41 @@ void c(int h, int w);
 void d(int h , int w);
 void e(int w, int h);
 void f(int w,int h);
+void g(int h , int w);
+
 int main()
 {
-    f(10,10);
+    g(9,9);
 
     cout<<endl<<endl<<endl;
 }
+
+void g(int h, int w)
+{
+    for(int i =0 ; i<h; i++)
+    {
+        for(int j =0 ;j<w;j++)
+        {
+            if(
+                (i==0)
+                ||(i==h/2 && j>w/2)
+                ||(i==h-1)
+                ||(j==0)
+                ||(i>h/2 && j==w-1)
+            )
+            {
+                cout<<"*";
+            }
+            else
+            {
+                cout<<" ";
+            }
+        }
+        cout<<endl;
+    }
+}
+
+
 void f(int w,int h)
 {
     for(int i =0;i<h;i++)
