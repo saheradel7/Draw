@@ -9,12 +9,34 @@ void d(int h , int w);
 void e(int w, int h);
 void f(int w,int h);
 void g(int h , int w);
+void h(int h , int w);
 
 int main()
 {
-    g(9,9);
+    h(9,9);
 
     cout<<endl<<endl<<endl;
+}
+void h(int h , int w)
+{
+    for(int i = 0 ; i<h ; i++)
+    {
+        for(int j =0 ; j< w ; j++)
+        {
+            if(
+                (j==0)
+                ||(j ==w-1)
+                ||(i==h/2)
+            )
+            {
+                cout<<"*";
+            }
+            else{
+                cout<<" ";
+            }
+        }
+        cout<< endl;
+    }
 }
 
 void g(int h, int w)
