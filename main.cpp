@@ -1,23 +1,47 @@
 #include<iostream>
 using namespace std;
 
-void a(int w, int h);
-void s(int w, int h);
+void a(int w , int h);
+void s(int w , int h);
 void b(int w , int h);
-void c(int h, int w);
+void c(int h , int w);
 void d(int h , int w);
-void e(int w, int h);
-void f(int w,int h);
+void e(int w , int h);
+void f(int w , int h);
 void g(int h , int w);
 void h(int h , int w);
 void i(int h , int w);
 void j(int h , int w);
+void k(int h , int w);
 
 int main()
 {
-    j(12,12);
+    k(9,9);
 
     cout<<endl<<endl<<endl;
+}
+
+void k(int h , int w)
+{
+    for(int i = 0 ; i<h ; i++)
+    {
+        for(int j =0 ; j< w ; j++)
+        {
+            if(
+                (j==0)
+                ||(j==(h/2)-(i))
+                ||(i>h/2 && j==(h/2)+(i-h))
+            
+            )
+            {
+                cout<<"*";
+            }
+            else{
+                cout<<"  ";
+            }
+        }
+        cout<< endl;
+    }
 }
 
 void j(int h , int w)
