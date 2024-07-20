@@ -10,13 +10,69 @@ void e(int w, int h);
 void f(int w,int h);
 void g(int h , int w);
 void h(int h , int w);
+void i(int h , int w);
+void j(int h , int w);
 
 int main()
 {
-    h(9,9);
+    j(12,12);
 
     cout<<endl<<endl<<endl;
 }
+
+void j(int h , int w)
+{
+    for(int i = 0 ; i<h ; i++)
+    {
+        for(int j =0 ; j< w ; j++)
+        {
+            if(
+                (j==w/2)
+                ||(i==0 && j ==(w/2)+1)
+                ||(i==0 && j ==(w/2)-1)
+                ||(i==0 && j ==(w/2)+2)
+                ||(i==0 && j ==(w/2)-2)
+                ||(j==0 && i>h-(h/3))
+                ||(i==h-1 && j < w/2)
+            
+            
+            )
+            {
+                cout<<"*";
+            }
+            else{
+                cout<<" ";
+            }
+        }
+        cout<< endl;
+    }
+}
+
+void i(int h , int w)
+{
+    for(int i = 0 ; i<h ; i++)
+    {
+        for(int j =0 ; j< w ; j++)
+        {
+            if(
+                (j==w/2)
+                ||(i==0 && j ==(w/2)+1)
+                ||(i==0 && j ==(w/2)-1)
+                ||(i==h-1 && j ==(w/2)+1)
+                ||(i==h-1 && j ==(w/2)-1)
+            )
+            {
+                cout<<"*";
+            }
+            else{
+                cout<<" ";
+            }
+        }
+        cout<< endl;
+    }
+}
+
+
 void h(int h , int w)
 {
     for(int i = 0 ; i<h ; i++)
