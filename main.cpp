@@ -13,14 +13,85 @@ void h(int h , int w);
 void i(int h , int w);
 void j(int h , int w);
 void k(int h , int w);
+void l(int h , int w);
+void m(int h , int w);
+void n(int h , int w);
 
 int main()
 {
-    k(9,9);
+    m(14,14);
 
     cout<<endl<<endl<<endl;
 }
 
+void m(int h , int w)
+{
+    for(int i = 0 ; i<h ; i++)
+    {
+        for(int j =0 ; j< w ; j++)
+        {
+            if(
+                (j==0)
+                ||(j==w-1)
+                ||(j==i+1 && j<=w/2)
+                ||(j==w-(i+1) && j>w/2)
+            
+            )
+            {
+                cout<<"*";
+            }
+            else{
+                cout<<" ";
+            }
+        }
+        cout<< endl;
+    }
+}
+
+void n(int h , int w)
+{
+    for(int i = 0 ; i<h ; i++)
+    {
+        for(int j =0 ; j< w ; j++)
+        {
+            if(
+                (j==0)
+                ||(j==w-1)
+                ||(j==i)
+            
+            )
+            {
+                cout<<"*";
+            }
+            else{
+                cout<<" ";
+            }
+        }
+        cout<< endl;
+    }
+}
+
+void l(int h , int w)
+{
+    for(int i = 0 ; i<h ; i++)
+    {
+        for(int j =0 ; j< w ; j++)
+        {
+            if(
+                (j==0)
+                ||(i==h-1)
+            
+            )
+            {
+                cout<<"*";
+            }
+            else{
+                cout<<" ";
+            }
+        }
+        cout<< endl;
+    }
+}
 void k(int h , int w)
 {
     for(int i = 0 ; i<h ; i++)
